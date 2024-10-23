@@ -11,15 +11,33 @@
 </head>
 
 <body>
-    <section class="d-flex align-items-center justify-content-center min-vh-100 bg-light-white">
+    <!-- counter-app -->
+    <section class="d-flex align-items-center justify-content-center min-vh-100 bg-light-white mb-2">
         <div class="container align-items-center d-flex justify-content-center flex-column">
             <h2 class="heading">Counter app</h2>
             <div class="card p-5 bg-white rounded-5 border-0">
                 <div class="number" id="count">0</div>
                 <div class="d-flex gap-20">
-                    <button class="btn" id="add-one">Add one</button>
+                    <button class="btn" id="add-one-increase">Add one</button>
                     <button class="btn" id="less-one">Less one</button>
                 </div>
+            </div>
+        </div>
+    </section>
+    <!-- Advance-counter-app -->
+    <section class="d-flex align-items-center justify-content-center min-vh-100 bg-light-white">
+        <div class="container align-items-center d-flex justify-content-center flex-column">
+            <h2 class="heading">Advance Counter app</h2>
+            <div class="card p-5 bg-white rounded-5 border-0 ">
+                <div class="d-flex align-items-center flex-column">
+                    <p class="text-center number" id="current-value">0</p>
+                    <div class="d-flex gap-20">
+                        <button class="btn" id="add-one">Add One</button>
+                        <button class="btn" id="save" onclick="myfunction() ">Save</button>
+                    </div>
+                </div>
+                <p class="text-center previous">Previous values</p>
+                <p class="text-center prev-num" id="previous-values"></p>
             </div>
         </div>
     </section>

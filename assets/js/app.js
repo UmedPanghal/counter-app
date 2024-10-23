@@ -1,14 +1,16 @@
+//  counter-app 
 var count = 0;
 var displayCount = document.getElementById("count");
 
-var incrementElement = document.getElementById("add-one");
+var incrementElement = document.getElementById("add-one-increase");
 var decrementElement = document.getElementById("less-one");
 
 incrementElement.addEventListener('click', function () {
     if (count < "1") {
         count++;
         displayCount.innerHTML = count;
-    } else {
+    }
+    else {
         count++;
         displayCount.innerHTML = count;
     }
@@ -20,3 +22,45 @@ decrementElement.addEventListener('click', function () {
     }
 });
 
+
+
+// advanced counter 
+
+const currentValueElement = document.getElementById('current-value');
+const addOneButton = document.getElementById('add-one');
+const saveButton = document.getElementById('save');
+const previousValuesElement = document.getElementById('previous-values');
+
+
+let currentValue = 0;
+const previousValues = [];
+
+
+function updateCurrentValue() {
+    currentValueElement.textContent = currentValue;
+}
+
+
+addOneButton.addEventListener('click', () => {
+    currentValue++;
+    updateCurrentValue();
+});
+
+
+saveButton.addEventListener('click', () => {
+    previousValues.push(currentValue);
+    updatePreviousValues();
+});
+
+
+function updatePreviousValues() {
+    previousValuesElement.textContent = previousValues.join(', ');
+}
+
+
+updateCurrentValue();
+updatePreviousValues();
+function myfunction() {
+    document.getElementById("save").innerHTML = "Saved"
+
+}

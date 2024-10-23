@@ -41,3 +41,34 @@
 .card {
     box-shadow: 0px 11px 44px -10px #00000040;
 }
+.mw-500{
+    max-width: 500px;
+}
+.para {
+    font-family: "Inter" sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+    color: #808080;
+    margin-top: 20px;
+}
+
+.previous {
+    font-family: "Inter" sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.prev-num {
+    font-family: "Inter" sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: center;
+    color: #000000;
+   
+}
