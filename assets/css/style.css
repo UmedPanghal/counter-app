@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.number {
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.57px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.bg-light-white {
+    background-color: #f6f6f6;
+}
+
+.heading {
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43.57px;
+    text-align: center;
+    color: #808080;
+    margin-bottom: 40px;
+}
+
+.btn {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+    text-align: center;
+    background: linear-gradient(97.42deg, #128DFF -4.95%, #1444EF 109.04%);
+    color: #ffffff !important;
+    padding: 13px 35px !important;
+}
+
+.card {
+    box-shadow: 0px 11px 44px -10px #00000040;
+}
