@@ -24,47 +24,26 @@ decrementElement.addEventListener('click', function () {
 
 
 
-// advanced counter 
-
-const currentValueElement = document.getElementById('current-value');
-const addOneButton = document.getElementById('add-one');
-const saveButton = document.getElementById('save');
-const previousValuesElement = document.getElementById('previous-values');
-
-
+// advanced counter
 let currentValue = 0;
-const previousValues = [];
+let previousValues = [];
 
-
-function updateCurrentValue() {
-    currentValueElement.textContent = currentValue;
+function addOne() {
+    currentValue++;
+    document.getElementById("currentValue").textContent = currentValue;
 }
 
-
-addOneButton.addEventListener('click', () => {
-    currentValue++;
-    updateCurrentValue();
-});
-
-
-saveButton.addEventListener("click", () => {
-    if (currentValue > 0) {
+function save() {
+    if (currentValue !== 0) {
         previousValues.push(currentValue);
-        previousValuesElement.textContent = previousValues.join(", ");
+        document.getElementById("previousValues").textContent = previousValues.join(", ");
+        currentValue = 0;
+        document.getElementById("currentValue").textContent = currentValue;
     } else {
         alert("Current value must be greater than 0 to save.");
     }
-});
-
-
-function updatePreviousValues() {
-    previousValuesElement.textContent = previousValues.join(', ');
 }
 
 
-updateCurrentValue();
-updatePreviousValues();
-function myfunction() {
-    document.getElementById("save").innerHTML = "Saved"
-
-}
+// document.getElementById("currentValue").textContent = currentValue;
+// document.getElementById("previousValues").textContent = "";
