@@ -43,7 +43,3 @@ function save() {
         alert("Current value must be greater than 0 to save.");
     }
 }
-
-
-// document.getElementById("currentValue").textContent = currentValue;
-// document.getElementById("previousValues").textContent = "";
