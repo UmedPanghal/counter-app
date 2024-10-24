@@ -47,9 +47,13 @@ addOneButton.addEventListener('click', () => {
 });
 
 
-saveButton.addEventListener('click', () => {
-    previousValues.push(currentValue);
-    updatePreviousValues();
+saveButton.addEventListener("click", () => {
+    if (currentValue > 0) {
+        previousValues.push(currentValue);
+        previousValuesElement.textContent = previousValues.join(", ");
+    } else {
+        alert("Current value must be greater than 0 to save.");
+    }
 });
 
 

@@ -41,9 +41,11 @@
 .card {
     box-shadow: 0px 11px 44px -10px #00000040;
 }
-.mw-500{
+
+.mw-500 {
     max-width: 500px;
 }
+
 .para {
     font-family: "Inter" sans-serif;
     font-size: 16px;
@@ -70,5 +72,5 @@
     line-height: 19.36px;
     text-align: center;
     color: #000000;
-   
+
 }
