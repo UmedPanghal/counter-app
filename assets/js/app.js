@@ -43,3 +43,37 @@ function save() {
         alert("Current value must be greater than 0 to save.");
     }
 }
+
+// text-editior
+
+const textArea = document.getElementById('text-area');
+const colorSelect = document.getElementById('color');
+const fontSizeSelect = document.getElementById('font-size');
+const alignmentSelect = document.getElementById('alignment');
+const fontFamilySelect = document.getElementById('font-family');
+const textDecorationSelect = document.getElementById('text-decoration');
+const fontWeightSelect = document.getElementById('font-weight');
+
+colorSelect.addEventListener('change', () => {
+    textArea.style.color = colorSelect.value;
+});
+
+fontSizeSelect.addEventListener('change', () => {
+    textArea.style.fontSize = fontSizeSelect.value + 'px';
+});
+
+alignmentSelect.addEventListener('change', () => {
+    textArea.style.textAlign = alignmentSelect.value;
+});
+
+fontFamilySelect.addEventListener('change', () => {
+    textArea.style.fontFamily = fontFamilySelect.value;
+});
+
+textDecorationSelect.addEventListener('change', () => {
+    textArea.style.textDecoration = textDecorationSelect.value;
+});
+
+fontWeightSelect.addEventListener('change', () => {
+    textArea.style.fontWeight = fontWeightSelect.value;
+});
